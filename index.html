@@ -3,33 +3,149 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>La Salle · Reportes</title>
+<title>La Salle · Documentos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/css/adcom.css">
+<style>
+.jump { display: flex; flex-wrap: wrap; gap: 8px; }
+.jump a { font-size: 13px; font-weight: 500; text-decoration: none; background: #2A2A27; color: var(--head-ink); border-radius: 99px; padding: 5px 14px; }
+.jump a:hover, .jump a:focus-visible { background: var(--accent); color: var(--ink); outline: none; }
+.jump b { color: var(--accent); margin-left: 4px; }
+.jump a:hover b, .jump a:focus-visible b { color: var(--ink); }
+.files { display: grid; }
+.file { display: grid; grid-template-columns: 92px 1fr auto; gap: 4px 16px; align-items: baseline; padding: 14px 4px; border-top: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.file:first-child { border-top: 0; }
+.file:hover, .file:focus-visible { background: var(--accent-soft); outline: none; border-radius: 10px; }
+.file .when { font-size: 13px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.file .what b { display: block; font-size: 15px; }
+.file .what span { font-size: 13px; color: var(--muted); }
+.file .kind { font-size: 11px; font-weight: 600; letter-spacing: .06em; background: var(--panel); border-radius: 99px; padding: 2px 10px; }
+@media (max-width: 560px) { .file { grid-template-columns: 1fr auto; } .file .when { grid-column: 1 / -1; } }
+</style>
 </head>
 <body>
 <div class="wrap">
 
 <header class="top">
   <div class="brand"><i></i>ADCOM <span class="sep">×</span> LA SALLE PEREIRA</div>
-  <h1>La Salle · <span>Reportes</span></h1>
-  <p>El seguimiento de las campañas de La Salle Pereira en Meta y Google, en un solo lugar.</p>
+  <h1>La Salle · <span>Documentos</span></h1>
+  <p>Reportes, planeación, creatividad e informes de las campañas de La Salle Pereira Bilingual School en Meta y Google Ads.</p>
+  <nav class="jump" aria-label="Secciones">
+    <a href="#tableros">Tableros <b>2</b></a>
+    <a href="#planeacion">Planeación <b>4</b></a>
+    <a href="#creatividad">Creatividad <b>1</b></a>
+    <a href="#informes">Informes <b>2</b></a>
+    <a href="#implementacion">Implementación <b>8</b></a>
+  </nav>
 </header>
 
-<section class="section">
+<section class="section" id="tableros">
   <div class="section-head">
     <p class="eyebrow">Seguimiento</p>
-    <h2>Reportes</h2>
+    <h2>Tableros</h2>
   </div>
   <div class="grid">
     <a class="card" href="reporte-semanal.html">
       <span class="tag">Semanal</span>
       <h3>Reporte semanal</h3>
       <p>Inversión y resultados de las tres campañas de conversión frente al presupuesto del flow, con filtro de fechas, ritmo de inversión del mes y lectura de la semana.</p>
-      <ul class="facts"><li>Meta</li><li>Google Search</li><li>Flow mensual</li></ul>
+      <ul class="facts"><li>Meta</li><li>Google Search</li></ul>
       <span class="go">Ver reporte →</span>
     </a>
+    <a class="card" href="https://adcomgroupco.github.io/seguimientos-eros/seguimiento-lasalle" target="_blank" rel="noopener">
+      <span class="tag">Mensual</span>
+      <h3>Seguimiento de presupuesto</h3>
+      <p>Presupuesto contra consumo por campaña y por mes, conectado a la hoja de seguimiento de presupuesto.</p>
+      <ul class="facts"><li>Hoja de seguimiento</li></ul>
+      <span class="go">Abrir seguimiento ↗</span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="planeacion">
+  <div class="section-head">
+    <p class="eyebrow">Plan de medios y estrategia</p>
+    <h2>Planeación</h2>
+  </div>
+  <div class="grid">
+    <a class="card" href="flow-general.html">
+      <span class="tag">Flow</span>
+      <h3>Flow general 2026</h3>
+      <p>Flow global de marzo a octubre, distribución por mes y plan vigente de septiembre y octubre, con costos por lead objetivo.</p>
+      <span class="go">Ver flow →</span>
+    </a>
+    <a class="card" href="https://docs.google.com/spreadsheets/d/1eItWY7G0UAMiy8FIjpqEUT_m43j5wFbPhaVgrjh6Rvk/edit" target="_blank" rel="noopener">
+      <span class="tag">Google Sheets</span>
+      <h3>Flow de medios</h3>
+      <p>La hoja de trabajo del flow, con el flow real facturado mes a mes.</p>
+      <span class="go">Abrir hoja ↗</span>
+    </a>
+    <a class="card" href="segmentacion-meta.html">
+      <span class="tag">Meta</span>
+      <h3>Segmentación Meta Ads</h3>
+      <p>Lógica geográfica, estructura de campaña, los 7 pines alrededor de la sede y proyección de leads. Versión 4.</p>
+      <span class="go">Ver documento →</span>
+    </a>
+    <a class="card" href="palabras-clave-google-ads.html">
+      <span class="tag">Google Ads</span>
+      <h3>Palabras clave Google Ads</h3>
+      <p>Marca, genéricas por intención, competencia y negativas para la campaña de matrículas 2027. Versión 2.</p>
+      <span class="go">Ver documento →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="creatividad">
+  <div class="section-head">
+    <p class="eyebrow">Piezas</p>
+    <h2>Creatividad</h2>
+  </div>
+  <div class="grid">
+    <a class="card" href="brief-audiovisual.html">
+      <span class="tag">Reels</span>
+      <h3>Brief audiovisual 2026</h3>
+      <p>Los ocho reels: idea, concepto, guion, CTA y caption de cada pieza, por eje (bienestar, bilingüismo, investigación y tecnología).</p>
+      <span class="go">Ver brief →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="informes">
+  <div class="section-head">
+    <p class="eyebrow">Análisis</p>
+    <h2>Informes</h2>
+  </div>
+  <div class="grid">
+    <a class="card" href="analisis-palabras-clave-search.html">
+      <span class="tag">Google Ads</span>
+      <h3>Análisis de palabras clave</h3>
+      <p>Rendimiento de la campaña de Search y del informe de términos de búsqueda, del 7 de julio al 5 de agosto de 2026.</p>
+      <span class="go">Ver informe →</span>
+    </a>
+    <a class="card" href="informe-abril-mayo-2026.html">
+      <span class="tag">Meta y Google</span>
+      <h3>Informe abril – mayo 2026</h3>
+      <p>Leads, inversión y costo por lead de Meta y Google en abril y mayo de 2026, frente a los objetivos del flow.</p>
+      <span class="go">Ver informe →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="implementacion">
+  <div class="section-head">
+    <p class="eyebrow">PDF</p>
+    <h2>Reportes de implementación</h2>
+  </div>
+  <div class="panel files">
+    <a class="file" href="informes/2026-10-implementacion.pdf" target="_blank" rel="noopener"><span class="when">Oct 2026</span><span class="what"><b>Implementación octubre</b><span>Meta · 6 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2026-09-implementacion.pdf" target="_blank" rel="noopener"><span class="when">Sep 2026</span><span class="what"><b>Implementación septiembre</b><span>Meta · 9 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2026-09-contingencia.pdf" target="_blank" rel="noopener"><span class="when">Sep 2026</span><span class="what"><b>Contingencia</b><span>Meta · 4 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2026-06-implementacion-evento-meta.pdf" target="_blank" rel="noopener"><span class="when">Jun 2026</span><span class="what"><b>Implementación evento</b><span>Meta · 4 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2026-06-implementacion-meta.pdf" target="_blank" rel="noopener"><span class="when">Jun 2026</span><span class="what"><b>Implementación junio</b><span>Meta · 4 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2026-05-implementacion-meta.pdf" target="_blank" rel="noopener"><span class="when">May 2026</span><span class="what"><b>Implementación mayo</b><span>Meta · 11 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2025-11-implementacion-meta.pdf" target="_blank" rel="noopener"><span class="when">Nov 2025</span><span class="what"><b>Implementación noviembre</b><span>Meta · 12 páginas</span></span><span class="kind">PDF</span></a>
+    <a class="file" href="informes/2025-11-ajustes-search.pdf" target="_blank" rel="noopener"><span class="when">Nov 2025</span><span class="what"><b>Ajustes Search</b><span>Google Ads · 8 páginas</span></span><span class="kind">PDF</span></a>
   </div>
 </section>
 
